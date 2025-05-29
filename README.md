@@ -38,3 +38,20 @@ This project is a Flask-based REST API designed to reconcile identity informatio
     "email": "string (optional)",
     "phoneNumber": "string (optional)"
   }
+
+## Running Locally
+```bash
+git clone https://github.com/rajatrajat0210/Identity-Reconciliation-.git
+cd Identity-Reconciliation-
+```
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+python app.py
+```
+## Render API EndPoint  - https://identity-reconciliation-t843.onrender.com/identify
