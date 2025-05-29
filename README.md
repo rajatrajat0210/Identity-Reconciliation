@@ -38,6 +38,10 @@ This project is a Flask-based REST API designed to reconcile identity informatio
     "email": "string (optional)",
     "phoneNumber": "string (optional)"
   }
+![Primary ID Inserted](https://github.com/rajatrajat0210/Identity-Reconciliation/blob/main/PrimaryId.png?raw=true)
+![Secondary ID Inserted Linked with Primary ID](https://github.com/rajatrajat0210/Identity-Reconciliation/blob/main/SecondaryId.png?raw=true)
+![Error when Nothing inserted](https://github.com/rajatrajat0210/Identity-Reconciliation/blob/main/Error.png?raw=true)
+
 
 ## Running Locally
 ```bash
@@ -55,3 +59,4 @@ pip install -r requirements.txt
 python app.py
 ```
 ## Render API EndPoint  - https://identity-reconciliation-t843.onrender.com/identify
+! Render Service gets inactive , so just refresh the tab to make it active and use . Thanks for Watching ! 
