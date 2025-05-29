@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from models import db, Contact
 from sqlalchemy import or_
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 # Configure the SQLite database URI and disable modification tracking
@@ -101,4 +102,5 @@ def identify():
 
 # Run the app in debug mode if executed directly
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Get PORT from environment or default 5000
+    app.run(host="0.0.0.0", port=port)
