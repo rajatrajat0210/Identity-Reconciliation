@@ -59,4 +59,4 @@ pip install -r requirements.txt
 python app.py
 ```
 ## Render API EndPoint  - https://identity-reconciliation-t843.onrender.com/identify
-! Render Service gets inactive , so just refresh the tab to make it active and use . Thanks for Watching ! 
+! Render Service gets inactive , so just refresh the tab to make it active and use . Thanks for Visiting ! 
