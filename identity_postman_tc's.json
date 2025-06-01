@@ -1,0 +1,186 @@
+{
+  "info": {
+    "_postman_id": "b78c6c34-5f3d-4e1b-b3bc-b7599cfc1d9f",
+    "name": "Bitespeed Identity Reconciliation",
+    "description": "Test cases for /identify endpoint for Bitespeed backend task",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Create new contact (only phoneNumber)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"phoneNumber\": \"9876543210\"\n}"
+        },
+        "url": {
+          "raw": "https://identity-reconciliation-t843.onrender.com/identify",
+          "protocol": "https",
+          "host": ["identity-reconciliation-t843", "onrender", "com"],
+          "path": ["identify"]
+        }
+      }
+    },
+    {
+      "name": "2. Create new contact (only email)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"docbrown@fluxkart.com\"\n}"
+        },
+        "url": {
+          "raw": "https://identity-reconciliation-t843.onrender.com/identify",
+          "protocol": "https",
+          "host": ["identity-reconciliation-t843", "onrender", "com"],
+          "path": ["identify"]
+        }
+      }
+    },
+    {
+      "name": "3. Link existing phone to new email",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"phoneNumber\": \"9876543210\",\n  \"email\": \"marty@hillvalley.edu\"\n}"
+        },
+        "url": {
+          "raw": "https://identity-reconciliation-t843.onrender.com/identify",
+          "protocol": "https",
+          "host": ["identity-reconciliation-t843", "onrender", "com"],
+          "path": ["identify"]
+        }
+      }
+    },
+    {
+      "name": "4. Link existing email to new phone",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"docbrown@fluxkart.com\",\n  \"phoneNumber\": \"1231231234\"\n}"
+        },
+        "url": {
+          "raw": "https://identity-reconciliation-t843.onrender.com/identify",
+          "protocol": "https",
+          "host": ["identity-reconciliation-t843", "onrender", "com"],
+          "path": ["identify"]
+        }
+      }
+    },
+    {
+      "name": "5. Request with both existing email and phone",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"docbrown@fluxkart.com\",\n  \"phoneNumber\": \"1231231234\"\n}"
+        },
+        "url": {
+          "raw": "https://identity-reconciliation-t843.onrender.com/identify",
+          "protocol": "https",
+          "host": ["identity-reconciliation-t843", "onrender", "com"],
+          "path": ["identify"]
+        }
+      }
+    },
+    {
+      "name": "6. Request with only phoneNumber for linked contact",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"phoneNumber\": \"1231231234\"\n}"
+        },
+        "url": {
+          "raw": "https://identity-reconciliation-t843.onrender.com/identify",
+          "protocol": "https",
+          "host": ["identity-reconciliation-t843", "onrender", "com"],
+          "path": ["identify"]
+        }
+      }
+    },
+    {
+      "name": "7. Request with only email for linked contact",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"marty@hillvalley.edu\"\n}"
+        },
+        "url": {
+          "raw": "https://identity-reconciliation-t843.onrender.com/identify",
+          "protocol": "https",
+          "host": ["identity-reconciliation-t843", "onrender", "com"],
+          "path": ["identify"]
+        }
+      }
+    },
+    {
+      "name": "8. Create completely new contact",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"einstein@fluxkart.com\",\n  \"phoneNumber\": \"4564564567\"\n}"
+        },
+        "url": {
+          "raw": "https://identity-reconciliation-t843.onrender.com/identify",
+          "protocol": "https",
+          "host": ["identity-reconciliation-t843", "onrender", "com"],
+          "path": ["identify"]
+        }
+      }
+    }
+  ]
+}
