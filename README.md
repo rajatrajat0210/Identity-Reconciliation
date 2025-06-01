@@ -65,9 +65,9 @@ If Render Service gets inactive , so just refresh the tab to make it active and 
 
 To thoroughly test the `/identify` endpoint of the **Identity Reconciliation** service, I have created a comprehensive Postman collection covering all key scenarios described in the project requirements.
 
-### 🔗 Postman Collection Link
+### 🔗 Postman Test Cases Collection RUN File
 
-[Open the Postman Collection](https://www.postman.com/rajat-testing-api/workspace/bitespeed-public/collection/11409748-b0f4177c-734b-4c49-9f2e-76f5d7295dc5?action=share&creator=11409748)
+[Open the Postman Collection](https://github.com/rajatrajat0210/Identity-Reconciliation/blob/main/Bitespeed%20Identity%20Reconciliation.postman_test_run.json)
 
 ---
 
