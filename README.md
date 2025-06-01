@@ -61,25 +61,54 @@ python app.py
 ## Render API EndPoint  - https://identity-reconciliation-t843.onrender.com/identify
 If Render Service gets inactive , so just refresh the tab to make it active and use . 
 
-📬 Postman Collection
-🧪 We've prepared a full Postman collection with all the test cases for validating the /identify endpoint.
+## 🚀 API Testing with Postman
 
-✅ Includes:
+To thoroughly test the `/identify` endpoint of the **Identity Reconciliation** service, I have created a comprehensive Postman collection covering all key scenarios described in the project requirements.
 
-New primary contact creation
+### 🔗 Postman Collection Link
 
-Linking new secondary contact
+[Open the Postman Collection](https://www.postman.com/rajat-testing-api/workspace/bitespeed-public/collection/11409748-b0f4177c-734b-4c49-9f2e-76f5d7295dc5?action=share&creator=11409748)
 
-Merging two primaries
+---
 
-All valid combinations of email and phoneNumber (email only, phone only, both)
+### 📋 What’s Included?
 
-📌 How to Use:
+- **New Primary Contact Creation:**  
+  Validate the creation of a brand new primary contact when no existing records match.
 
-Open the link above in Postman.
+- **Secondary Contact Linking:**  
+  Check cases where a new contact with overlapping email or phone number is linked as secondary.
 
-Import the collection into your workspace.
+- **Primary Contact Merging:**  
+  Simulate merging two previously primary contacts when a shared identifier (email or phone) is detected.
 
-Run the test cases using the Postman runner or manually.
+- **Input Variations:**  
+  Test the endpoint with different combinations:  
+  - Email only  
+  - Phone number only  
+  - Both email and phone number  
+
+- **Edge Cases & Validation:**  
+  Handle null or missing fields gracefully.
+
+---
+
+### ⚙️ How to Use the Collection
+
+1. **Open the link** above to view the collection in Postman.  
+2. Click **Fork** or **Import** to add it to your workspace.  
+3. Review each request, which includes predefined JSON payloads for all test cases.  
+4. Run requests individually or use the **Collection Runner** for batch testing.  
+5. Inspect responses to verify the returned contact consolidation matches expectations.
+
+---
+
+### 📢 Why Use This?
+
+Using this Postman collection allows for quick, repeatable testing to ensure your Identity Reconciliation endpoint behaves correctly and reliably before deployment or integration. It’s also a great tool for demoing your API to stakeholders or teammates.
+
+---
+
+*If you want, I can also share the exported Postman collection file (`.json`) to include directly in the repo!*
 
 Thanks for Visiting ! 
