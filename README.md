@@ -59,4 +59,27 @@ pip install -r requirements.txt
 python app.py
 ```
 ## Render API EndPoint  - https://identity-reconciliation-t843.onrender.com/identify
-! Render Service gets inactive , so just refresh the tab to make it active and use . Thanks for Visiting ! 
+If Render Service gets inactive , so just refresh the tab to make it active and use . 
+
+📬 Postman Collection
+🧪 We've prepared a full Postman collection with all the test cases for validating the /identify endpoint.
+
+✅ Includes:
+
+New primary contact creation
+
+Linking new secondary contact
+
+Merging two primaries
+
+All valid combinations of email and phoneNumber (email only, phone only, both)
+
+📌 How to Use:
+
+Open the link above in Postman.
+
+Import the collection into your workspace.
+
+Run the test cases using the Postman runner or manually.
+
+Thanks for Visiting ! 
