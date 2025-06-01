@@ -1,0 +1,198 @@
+{
+	"id": "958858f5-5660-4c65-9e13-cf1952ff6eeb",
+	"name": "Bitespeed Identity Reconciliation",
+	"timestamp": "2025-06-01T11:32:03.683Z",
+	"collection_id": "45442727-6c9736de-18ad-42b4-b190-a51666e71450",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-06-01T11:32:02.003Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2c58fff1-3024-4500-b4d3-685da02fe71a",
+			"name": "1. Create new contact (only phoneNumber)",
+			"url": "https://identity-reconciliation-t843.onrender.com/identify",
+			"time": 402,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				402
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f6193dd5-0009-4938-b7c2-3933d2a8ff59",
+			"name": "2. Create new contact (only email)",
+			"url": "https://identity-reconciliation-t843.onrender.com/identify",
+			"time": 134,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				134
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "493e319d-63ca-4350-8f2f-ee115fbeb106",
+			"name": "3. Link existing phone to new email",
+			"url": "https://identity-reconciliation-t843.onrender.com/identify",
+			"time": 144,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				144
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a6f32ca6-3b34-4266-8f60-42f03d8b7d35",
+			"name": "4. Link existing email to new phone",
+			"url": "https://identity-reconciliation-t843.onrender.com/identify",
+			"time": 142,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				142
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8aa62e3c-9f16-463d-963c-8ee3ef7c3f6c",
+			"name": "5. Request with both existing email and phone",
+			"url": "https://identity-reconciliation-t843.onrender.com/identify",
+			"time": 129,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				129
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "25c58e71-4c7f-4f07-b8e8-66d3ce78d1b7",
+			"name": "6. Request with only phoneNumber for linked contact",
+			"url": "https://identity-reconciliation-t843.onrender.com/identify",
+			"time": 130,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				130
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6fb83c20-42c4-41e2-b476-55b9cfdea01c",
+			"name": "7. Request with only email for linked contact",
+			"url": "https://identity-reconciliation-t843.onrender.com/identify",
+			"time": 136,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				136
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5d94a7a5-36b6-46a0-99c6-147f1780d977",
+			"name": "8. Create completely new contact",
+			"url": "https://identity-reconciliation-t843.onrender.com/identify",
+			"time": 140,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				140
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1357,
+	"collection": {
+		"requests": [
+			{
+				"id": "2c58fff1-3024-4500-b4d3-685da02fe71a",
+				"method": "POST"
+			},
+			{
+				"id": "f6193dd5-0009-4938-b7c2-3933d2a8ff59",
+				"method": "POST"
+			},
+			{
+				"id": "493e319d-63ca-4350-8f2f-ee115fbeb106",
+				"method": "POST"
+			},
+			{
+				"id": "a6f32ca6-3b34-4266-8f60-42f03d8b7d35",
+				"method": "POST"
+			},
+			{
+				"id": "8aa62e3c-9f16-463d-963c-8ee3ef7c3f6c",
+				"method": "POST"
+			},
+			{
+				"id": "25c58e71-4c7f-4f07-b8e8-66d3ce78d1b7",
+				"method": "POST"
+			},
+			{
+				"id": "6fb83c20-42c4-41e2-b476-55b9cfdea01c",
+				"method": "POST"
+			},
+			{
+				"id": "5d94a7a5-36b6-46a0-99c6-147f1780d977",
+				"method": "POST"
+			}
+		]
+	}
+}
